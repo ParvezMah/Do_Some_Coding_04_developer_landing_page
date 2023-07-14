@@ -13,7 +13,7 @@ body {
 }
 
 .hero_section {
-  background-image: url(images/developer.png);
+  background-image: url(./images/developer.png);
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -21,13 +21,17 @@ body {
 }
 .text_container {
   color: white;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top: 64px;
-  padding-left: 16px;
+  /* max-width: 900px;
+  margin: 0 auto; */
+  padding-top: 20px;
+  /* padding-left: 108px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .lg_text {
-  font-size: 72px;
+  font-size: 62px;
   font-weight: 400;
 }
 .black_box {
@@ -48,16 +52,17 @@ body {
 .work {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* grid-template-columns: repeat(4,1fr); */
 
-  max-width: 1100px;
+  /* max-width: 1400px; */
   margin: 50px auto;
 }
-.grid_item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .card {
   max-width: 320px;
   height: 400px;
@@ -70,6 +75,7 @@ body {
   box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
   transition: 0.2s ease-in-out;
 }
+
 .card_content {
   padding: 20px;
 }
@@ -77,13 +83,15 @@ body {
   margin-bottom: 10px;
 }
 .bottom_section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .contact {
   background-color: #515603;
 }
 .about {
   background-color: #722300;
+
 }
 
 .contact,
@@ -109,6 +117,198 @@ footer {
   padding: 20px;
   color: white;
 }
+.hide{
+  display: none;
+}
+
+
+
+/* Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .text_container{
+    text-align: center;
+    top:0;
+  }
+  .lg_text {
+    font-size: 52px;
+    font-weight: 400;
+  }
+  .about h2,
+  .contact h2 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 300;
+  }
+  .black_box h2 {
+    font-size: 52px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+  }
+  .black_box h2 span{
+    font-size: 76px;
+    font-weight: 700;
+  }
+  .card{
+    max-width: 450px;
+  }
+  .card h3{
+    text-align: c;
+  }
+  .card img{
+    width: 100%;
+  }
+  .about h2,
+  .contact h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+  
+}
+
+
+
+
+
+/* Mobile Device */
+@media screen and (max-width:576px) {
+  .text_container h1, h2 {
+    text-align: center;
+  }
+  .lg_text {
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: ;
+  }
+  .black_box h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+  }
+  .black_box h2 span {
+    font-weight: 400;
+    font-size: 58px;
+  }
+  .card {
+    max-width: 450px;
+  }
+  .card_content h3{
+    text-align: center;
+  }
+  .card img{
+    width: 100%;
+  }
+
+  .bottom_section{
+    grid-template-columns: 1fr;
+  }
+  .about,
+  .contact{
+    padding:20px;
+}
+  .about h2,
+  .contact h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For mobile
 @media (max-width: 786px) {
   .hero_section {
     min-height: 50vh;
@@ -136,5 +336,4 @@ footer {
   .about h2,
   .contact h2 {
     font-size: 32px;
-  }
-}
+  } */
